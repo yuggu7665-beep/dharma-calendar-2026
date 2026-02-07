@@ -1,0 +1,8 @@
+
+{
+  "name": "Dharma Calendar - Offline Hindu Festival Tracker",
+  "description": "A beautiful, fully offline application to track monthly Hindu festivals, Ekadashi, and Shivaratri with local spiritual guidance.",
+  "requestFramePermissions": [
+    "notifications"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "appId": "com.dharma.calendar",
+  "appName": "Dharma Calendar",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "android": {
+    "buildOptions": {
+      "keystorePath": "",
+      "keystoreAlias": ""
+    }
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "backgroundColor": "#fffaf0",
+      "showSpinner": false
+    }
+  }
+}
