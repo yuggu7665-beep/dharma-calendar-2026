@@ -222,7 +222,7 @@ const App: React.FC = () => {
               </span>
             )}
           </button>
-          
+        </div>
           <div className="flex items-center bg-white shadow-lg rounded-xl border border-gray-100 overflow-hidden">
             <button onClick={() => setCurrentDate(new Date(currentDate.setMonth(currentDate.getMonth() - 1)))} className="p-4 hover:bg-orange-50 text-orange-500 transition-colors"><ChevronLeft size={20} /></button>
             <div className="px-6 font-bold text-gray-700 font-cinzel min-w-[160px] text-center tracking-widest">{monthLabel}</div>
