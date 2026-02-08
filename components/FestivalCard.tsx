@@ -11,7 +11,9 @@ interface FestivalCardProps {
 }
 
 const FestivalCard: React.FC<FestivalCardProps> = ({ festival, onNotify, isNotified, onDetails }) => {
-  const dateObj = new Date(festival.date);
+  // Fix timezone issue: parse date as local time, not UTC
+  const [year, month, day] = festival.date.split('-').map(Number);
+  const dateObj = new Date(year, month - 1, day);
   const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'short' });
   const dayNum = dateObj.getDate();
   const monthName = dateObj.toLocaleDateString('en-US', { month: 'short' });
