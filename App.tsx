@@ -169,16 +169,25 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen pb-24 px-4 sm:px-6 lg:px-8">
-      <header className="max-w-7xl mx-auto pt-6 pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="p-3 gradient-saffron text-white rounded-xl shadow-md">
-            <Calendar size={28} />
+      <header className="max-w-7xl mx-auto pt-8 pb-6">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="flex items-center gap-4">
+            <div className="relative p-4 gradient-saffron text-white rounded-2xl shadow-lg animate-divine-glow">
+              <Calendar size={32} />
+              <span className="absolute -top-1 -right-1 text-2xl animate-om-pulse">🔔</span>
+            </div>
+            <div>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-3xl om-symbol">ॐ</span>
+                <h1 className="text-3xl font-spiritual font-bold bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent">
+                  Dharma Calendar 2026
+                </h1>
+              </div>
+              <p className="text-sm text-orange-600 font-hindi font-medium">
+                🙏 सनातन पंचांग एवं त्योहार
+              </p>
+            </div>
           </div>
-          <div>
-            <h1 className="text-2xl font-bold text-gray-800">Dharma Calendar 2026</h1>
-            <p className="text-sm text-gray-500">Hindu Festival Tracker</p>
-          </div>
-        </div>
 
         <div className="flex items-center gap-3">
           <button 
