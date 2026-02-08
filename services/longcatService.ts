@@ -4,7 +4,7 @@ import { PanchangData, ChatMessage } from "../types";
 // LongCat API configuration - OpenAI compatible format
 const LONGCAT_BASE_URL = "https://api.longcat.chat/openai/v1";
 // Using the key from env or fallback for build safety
-const LONGCAT_API_KEY = process.env.LONGCAT_API_KEY || "ak_2Dp0mF5mT5Vp4YQ0Zh5vD6mA9HU9L";
+const LONGCAT_API_KEY = import.meta.env.VITE_LONGCAT_API_KEY || "ak_2Dp0mF5mT5Vp4YQ0Zh5vD6mA9HU9L";
 
 export async function fetchPanchangData(date: Date): Promise<PanchangData> {
   try {
